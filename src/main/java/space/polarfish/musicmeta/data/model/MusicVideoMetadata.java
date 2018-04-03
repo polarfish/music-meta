@@ -146,8 +146,6 @@ public class MusicVideoMetadata {
             setGenre(entity.getGenre());
         }
 
-        // TODO handle subgenres
-
         if (entity.getReleaseYear() != null) {
             setReleaseYear(entity.getReleaseYear());
         }
