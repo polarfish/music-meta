@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: "org.hsqldb.jdbc.JDBCDriver"
+    url: "jdbc:hsqldb:mem:music-meta-db"
+  jpa:
+    show-sql: false
+    open-in-view: false
+    hibernate:
+      dialect: "org.hibernate.dialect.HSQLDialect"
+      ddl-auto: "update"
+    properties:
+      hibernate:
+        current_session_context_class: "org.springframework.orm.hibernate5.SpringSessionContext"

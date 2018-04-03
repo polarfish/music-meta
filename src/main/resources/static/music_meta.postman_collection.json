@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "bbefec5b-b7c5-402e-b20f-2feab7a32cda",
+		"name": "Music Video Metadata",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"title\": \"Love Me Two Times\",\r\n\t\"album\": \"Strange Days\",\r\n\t\"artist\": \"The Doors\",\r\n\t\"duration\": 326,\r\n\t\"genre\": \"Rock\",\r\n\t\"subgenres\": [\"Classic rock\", \"Rock\"],\r\n\t\"releaseYear\": 1967\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/music-video-metadata",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"music-video-metadata"
+					]
+				},
+				"description": "Create new music video metadata entity"
+			},
+			"response": []
+		},
+		{
+			"name": "Read",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/music-video-metadata/100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"music-video-metadata",
+						"100"
+					]
+				},
+				"description": "Read music video metadata entity"
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"duration\": 250\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/music-video-metadata/100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"music-video-metadata",
+						"100"
+					]
+				},
+				"description": "Update music video metadata entity"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/music-video-metadata/100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"music-video-metadata",
+						"100"
+					]
+				},
+				"description": "Delete music video metadata entity"
+			},
+			"response": []
+		},
+		{
+			"name": "List",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/music-video-metadata?genre=Rock&subgenre=Progressive rock",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"music-video-metadata"
+					],
+					"query": [
+						{
+							"key": "genre",
+							"value": "Rock"
+						},
+						{
+							"key": "subgenre",
+							"value": "Progressive rock"
+						}
+					]
+				},
+				"description": "List music video metadata entities. \nAdd \"genre\" query parameter to filter by genre. \nAdd \"subgenre\" query parameter to filter by subgenre."
+			},
+			"response": []
+		}
+	]
+}
