@@ -46,6 +46,6 @@ The root of the project contains a link to the Postman collection.
     "Art rock",
     "Symphonic rock"
   ],
-  "releaseYear": 2010
+  "releaseYear": 1975
 }
 ```
