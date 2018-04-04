@@ -23,7 +23,7 @@ public class MusicVideoMetadata {
     private String artist;
     private Integer duration;
     private Genre genre;
-    private Set<String> subgenres = new HashSet<>();
+    private Set<String> subgenres;
     private Integer releaseYear;
 
     @Id
@@ -144,6 +144,10 @@ public class MusicVideoMetadata {
 
         if (entity.getGenre() != null) {
             setGenre(entity.getGenre());
+        }
+
+        if (entity.getSubgenres() != null) {
+            setSubgenres(entity.getSubgenres());
         }
 
         if (entity.getReleaseYear() != null) {
