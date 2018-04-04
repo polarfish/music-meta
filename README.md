@@ -21,7 +21,7 @@ The root of the project contains a link to the Postman collection.
 
 * Create entity ```POST api/v1/music-video-metadata```
   * Accepts payload (see entity example below)
-  * ID is generated automatically
+  * ID is generated automatically (starting from 100)
   * Returns the created entity
 * Read entity ```GET api/v1/music-video-metadata/{id}```
 * Update entity ```PUT api/v1/music-video-metadata/{id}```
