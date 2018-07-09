@@ -11,10 +11,6 @@ Music Video Metadata Management System (test assignment)
 
 The project is configured to work on port 8080
 
-### Live demo
-
-[https://apps.polarfish.space/music-meta/](https://apps.polarfish.space/music-meta/)
-
 ### API usage
 
 The root of the project contains a link to the Postman collection.
